@@ -43,7 +43,7 @@ const fillMediumArticles = () => {
   mediumArticles.forEach((value,index) => {
     console.log(value.name)      
     $(".modal-content").append(`
-    <div class="container post">
+    <div class="container post${index}">
     <div class="modal-header"> 
         <h5 class="modal-title" id="name">${value.name}</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
